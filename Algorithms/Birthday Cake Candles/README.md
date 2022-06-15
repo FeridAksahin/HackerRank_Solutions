@@ -1,1 +1,1 @@
-https://www.hackerrank.com/challenges/birthday-cake-candles/editorial
+https://www.hackerrank.com/challenges/birthday-cake-candles/problem
