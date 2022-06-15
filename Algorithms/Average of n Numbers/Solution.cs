@@ -10,8 +10,6 @@ for (int i = 0; i < arrayLength; i++)
     array[i] = Convert.ToInt32(Console.ReadLine());
 }
 int sum = 0;
-
-int toplam = 0;
 foreach (var i in array)
     sum += i;
 
