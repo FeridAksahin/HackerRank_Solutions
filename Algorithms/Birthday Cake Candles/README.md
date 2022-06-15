@@ -1,2 +1,1 @@
-# Hackerrank_Solutions
-My HackerRank solutions
+https://www.hackerrank.com/challenges/birthday-cake-candles/problem
