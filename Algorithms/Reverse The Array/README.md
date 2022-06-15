@@ -1,2 +1,1 @@
-# Hackerrank_Solutions
-My HackerRank solutions
+https://www.hackerrank.com/challenges/30-arrays/problem
