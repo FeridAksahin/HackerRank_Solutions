@@ -1,1 +1,1 @@
-https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+https://www.hackerrank.com/challenges/compare-the-triplets/problem
