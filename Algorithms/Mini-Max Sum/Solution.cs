@@ -1,6 +1,6 @@
 //Without using the hackerrank editor.
 
-Console.WriteLine("Dizi lengh");
+Console.WriteLine("Enter array length.");
 int len = Convert.ToInt32(Console.ReadLine());
 int[] arr = new int[len];
 
@@ -14,7 +14,7 @@ Array.Sort(arr);
 foreach (int i in arr)
 {
     Console.WriteLine(i);
-}//1 2 3 4 5 
+}
 int maxSum = 0;
 foreach (int i in arr)
 {
