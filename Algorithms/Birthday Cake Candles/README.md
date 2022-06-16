@@ -1,2 +1,2 @@
-I solved it 3 different ways. <br>
+I solved it 2 different ways. <br>
 https://www.hackerrank.com/challenges/birthday-cake-candles/problem
