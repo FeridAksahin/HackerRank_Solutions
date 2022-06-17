@@ -23,13 +23,11 @@ class Result
         long min=0;
         
         for (var i = 0; i < 5; i++)
-
         {
-            sum=sum + arr[i] ;       
-            min=arr.Min();    
-            max=arr.Max();    
-        
+            sum=sum + arr[i] ;          
         }
+        min=arr.Min();    
+        max=arr.Max(); 
         long minValue = sum - max;
         long maxValue= sum - min;
 
