@@ -11,23 +11,18 @@ for (int i = 0; i < len; i++)
 }
 
 Array.Sort(arr);
-foreach (int i in arr)
-{
-    Console.WriteLine(i);
-}
 int maxSum = 0;
+int minSum = 0;
 foreach (int i in arr)
 {
-    if (i > arr[0])
+    if (i != arr[0])
     {
         maxSum += i;
     }
 }
-
-int minSum = 0;
 foreach (int i in arr)
 {
-    if (i < arr[len-1])
+    if (i != arr[len-1])
     {
         minSum += i;
     }

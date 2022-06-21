@@ -1,1 +1,1 @@
-https://www.hackerrank.com/challenges/simple-array-sum/problem
+https://www.hackerrank.com/challenges/30-sorting/problem
