@@ -1,43 +1,39 @@
 using System;
 
-class Calculator{
-    public int power(int n, int p){
-      
-        if(n>=0 && p>=0){
-            double nn = Convert.ToDouble(n);
-            double pp = Convert.ToDouble(p);
-            double ans = Math.Pow(nn, pp);
-            int ansConvert = Convert.ToInt32(ans);
-            return ansConvert;
-        }
- 
-        else
-        {
-            throw new Exception("n and p should be non-negative");
-        }
-     
-    }
-}
+class Printer
+{
 
-class Solution{
-    static void Main(String[] args){
-        Calculator myCalculator=new  Calculator();
-        int T=Int32.Parse(Console.ReadLine());
-        while(T-->0){
-            string[] num = Console.ReadLine().Split();
-            int n = int.Parse(num[0]);
-            int p = int.Parse(num[1]); 
-            try{
-                int ans=myCalculator.power(n,p);
-                Console.WriteLine(ans);
-            }
-            catch(Exception e){
-               Console.WriteLine(e.Message);
-
-            }
+	/**
+	*    Name: PrintArray
+	*    Print each element of the generic array on a new line. Do not return anything.
+	*    @param A generic array
+	**/
+      // Write your code here
+    public static void PrintArray<T>(T[] array)
+    {
+        foreach(T i in array){
+            Console.WriteLine(i);
         }
-        
-        
-        
     }
+  
+
+    static void Main(string[] args)
+	{
+		int n = Convert.ToInt32(Console.ReadLine());
+		int[] intArray = new int[n];
+		for (int i = 0; i < n; i++)
+		{
+			intArray[i] = Convert.ToInt32(Console.ReadLine());
+		}
+		
+		n = Convert.ToInt32(Console.ReadLine());
+		string[] stringArray = new string[n];
+		for (int i = 0; i < n; i++)
+		{
+			stringArray[i] = Console.ReadLine();
+		}
+		
+		PrintArray<Int32>(intArray);
+		PrintArray<String>(stringArray);
+	}
 }
