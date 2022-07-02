@@ -7,7 +7,7 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            Homework get = new Homework();
+            Questions get = new Questions();
             //    get.FirstQuestion();
             //    get.SecondQuestion();
             get.ThirdQuestion();
@@ -15,7 +15,7 @@ namespace MyApp
     }
 }
 
-class Homework
+class Questions
 {
     public void FirstQuestion()
     {
