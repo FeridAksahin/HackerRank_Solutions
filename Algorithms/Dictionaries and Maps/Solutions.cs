@@ -5,54 +5,41 @@ class Solution
 {
     static void Main(String[] args)
     {
-
-        int n = Convert.ToInt32(Console.ReadLine());
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+        long n = Convert.ToInt32(Console.ReadLine());
+        Dictionary<string, string> phoneNum = new Dictionary<string, string>();
+        string[] info = new string[2];
         string s;
-        string[] str = new string[2];
-        Dictionary<string, string> phoneNumber = new Dictionary<string, string>();
         for (int i = 0; i < n; i++)
         {
-
             s = Console.ReadLine();
-            str = s.Split(' ');
-            phoneNumber.Add(str[0], str[1]);
-            Array.Clear(str);
+            info = s.Split(' ');
+            phoneNum.Add(info[0], info[1]);
+            Array.Clear(info);
         }
-        for (int i = 0; i < phoneNumber.Count; i++)
+        string[] ar = new string[n];
+        for (int i = 0; i < n; i++)
         {
-            string query = Console.ReadLine();
+            string c = Console.ReadLine();
+            ar[i] = c;
+        }  
 
-            if (query != null)
+
+        for (int b = 0; b < n; b++)
+        {
+            if (ar[b] != null)
             {
-                if (phoneNumber.ContainsKey(query))
+                if (phoneNum.ContainsKey(ar[b]))
                 {
-                    Console.WriteLine(query + "=" + phoneNumber[query]);
+                    Console.WriteLine(ar[b] + "=" + phoneNum[ar[b]]);
                 }
+
                 else
                 {
                     Console.WriteLine("Not found");
                 }
             }
-        }
-        /*
-                or foreach
-                foreach (var phone in phoneNumber.Keys)
-               {
-                   string query = Console.ReadLine();
 
-                   if (query != null)
-                   {
-                       if (phoneNumber.ContainsKey(query))
-                       {
-                           Console.WriteLine(query + "=" + phoneNumber[query]);
-                       }
-                       else
-                       {
-                           Console.WriteLine("Not found");
-                       }
-                   }
-               }
-                */
+        }
     }
 }
-
