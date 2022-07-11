@@ -20,8 +20,6 @@ class Solution
     {
         int n = Convert.ToInt32(Console.ReadLine().Trim());
         string binary = Convert.ToString(n, 2); //convert binary
-        int countOne = 0;
-        int countZero = 0;
         int countA = 1;
         int countB = 1;
         int countC = 0;
